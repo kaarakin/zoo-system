@@ -5,7 +5,7 @@ public class Bird extends AbstractAnimal {
     private final double wingspan;
 
     // Конструктор класса Bird принимает кличку животного, название вида и размах крыльев птицы
-    // Для класса Mammal среда обитания по умолчанию "Птичник"
+    // Для класса Bird среда обитания по умолчанию "Птичник"
     public Bird(String name, String species, double wingspan) {
         super(name, species, "Птичник");
         this.wingspan = wingspan;
