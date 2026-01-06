@@ -6,7 +6,7 @@ public class MammalEnclosure extends AbstractEnclosure {
     private final double temperature;
 
     // Конструктор класса MammalEnclosure принимает код вольера, площадь и температуру
-    // Для класса MammalEnclosure тип вольера по умолчанию
+    // Для класса MammalEnclosure тип вольера по умолчанию "Вольер для млекопитающих"
     public MammalEnclosure(String code, double area, double temperature) {
         super(code, area, "Вольер для млекопитающих");
         this.temperature = temperature;
@@ -28,7 +28,7 @@ public class MammalEnclosure extends AbstractEnclosure {
     public boolean removeAnimal(Animal animal) {
         boolean removed = animals.remove(animal);
         if (removed) {
-            notifyObservers("Removed animal: " + animal.getName());
+            notifyObservers("Удалено животное: " + animal.getName());
         }
         return removed;
     }
